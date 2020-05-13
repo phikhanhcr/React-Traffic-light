@@ -1,26 +1,33 @@
-import React from 'react';
+import React , {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TrafficLight from './components/Traffic-lights';
+import Input from './components/Input.js'
+import DisplayBox from './components/DisplayBox'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      display : false
+    }
+  }
+  clickMe = () => {
+    this.setState({
+      display : true
+    })
+  }
+  render() {
+    const { display } = this.state;
+    return (
+      <div className="App">
+        <TrafficLight />
+        <Input />
+        <a href="#" class='AppBtn' onClick={this.clickMe}> Readme </a>
+        <DisplayBox display={display}/>
+      </div>
+    );
+  }
 }
 
 export default App;

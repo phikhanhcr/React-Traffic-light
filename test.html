@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .Box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .Box .wrapper {
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: #eee;
+    position: relative;
+
+  }
+
+  .Box .wrapper p {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    margin-top: 70px;
+  }
+
+  .Box .wrapper .first {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #ddd;
+  }
+
+  .Box .wrapper .first:hover {
+    background-color: #ccc;
+  }
+  .Box .btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .Box .btn a {
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10%;
+    color : white;
+    margin-left: 10px;
+  }
+  .Box .btn .Accept {
+    background-color: #1bc47d;
+
+  }
+  .Box .btn .Decline {
+    background-color: #d63447;
+    
+  }
+  .Box .btn .Accept:hover {
+    background-color: #28a745;
+  }
+  .Box .btn .Decline:hover {
+    background-color: #c74249;
+  }
+</style>
+
+<body>
+  <div class="Box">
+    <div class="wrapper">
+      <a href="#" class="first">
+        X
+      </a>
+
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit animi sapiente nesciunt, odio, minima
+        totam aspernatur eum quas ratione ea corrupti vel accusantium tenetur nobis temporibus aut cupiditate quidem
+        deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, blanditiis ut suscipit minima nihil
+        enim vero velit voluptatem repellendus nobis necessitatibus eaque non placeat sequi, animi rem. Vero, debitis
+        amet?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit animi sapiente nesciunt, odio, minima
+        totam aspernatur eum quas ratione ea corrupti vel accusantium tenetur nobis temporibus aut cupiditate quidem
+        deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, blanditiis ut suscipit minima nihil
+        enim vero velit voluptatem repellendus nobis necessitatibus eaque non placeat sequi, animi rem. Vero, debitis
+        amet?
+      </p>
+      <div class="btn">
+        <a href="#" class="Accept">
+          Accept
+        </a>
+        <a href="#" class="Decline">
+          Decline
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

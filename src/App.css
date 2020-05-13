@@ -1,7 +1,16 @@
 .App {
   text-align: center;
 }
-
+.App .AppBtn {
+  padding: 10px;
+  background-color: #6c92c4;
+  text-decoration: none;
+  color : white;
+  margin-top: 10px;
+}
+.App .AppBtn:hover {
+  background-color: #2f83f3;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +44,97 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.INPUT input {
+  height: 35px;
+  width: 250px;
+  padding-left: 10px;
+  border-radius: 15px;
+  position: relative;
+  border: 1px solid #2f83f3;
+}
+.INPUT input.color {
+  border: 1px solid #f00;
+}
+.INPUT img.display {
+  display: none;
+}
+
+.INPUT img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 4px;
+  left: 56%;; 
+}
+
+/* Box Display */
+.Box {
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  text-align: justify;
+  display: none;
+}
+.Box.display {
+  display: flex;
+  
+}
+.Box .wrapper {
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: #eee;
+  position: relative;
+
+}
+
+.Box .wrapper p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  margin-top: 70px;
+}
+
+.Box .wrapper .first {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #ddd;
+}
+
+.Box .wrapper .first:hover {
+  background-color: #ccc;
+}
+.Box .btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.Box .btn a {
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 10%;
+  color : white;
+  margin-left: 10px;
+}
+.Box .btn .Accept {
+  background-color: #1bc47d;
+
+}
+.Box .btn .Decline {
+  background-color: #d63447;
+  
+}
+.Box .btn .Accept:hover {
+  background-color: #28a745;
+}
+.Box .btn .Decline:hover {
+  background-color: #c74249;
 }
